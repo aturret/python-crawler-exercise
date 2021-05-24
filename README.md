@@ -11,6 +11,8 @@
 pip install beautifulsoup4
 ```
 
+哎呀不要问为什么没有settings.py，好麻烦，随手写的小玩具，懒得优化了能用就行。可能以后心情好了弄个窗口界面方便操作吧。
+
 ## 开心网日记爬取
 
 kaixin001.py
@@ -19,5 +21,18 @@ kaixin001.py
 
 登录开心网，浏览器F12看http请求的header，获取自己的cookie。
 
-填写cookie，要爬的日记的url，要爬的总次数。走你。之后会生成HTML文件，格式是<:title>-\<YYYYMMDDHHMMSS\>
+填写cookie，要爬的日记的url，要爬的总次数。走你。
 
+之后会生成HTML文件，格式是<:title>-\<YYYYMMDDHHMMSS\>
+
+## 豆瓣日记爬取
+
+douban.py
+
+### 使用
+
+登录豆瓣，浏览器F12看http请求的header，获取自己的cookie。
+
+填写变量COOKIE，要爬的日记页的url。走你。
+
+之后会生成HTML文件，格式是<:title>-\<YYYYMMDDHHMMSS\>
